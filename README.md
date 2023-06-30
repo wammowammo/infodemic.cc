@@ -5,7 +5,12 @@ Chrome Extension that will (eventually) allow users to check and see if any give
 1. [Overview](#overview)
    * [Description](#description)
    * [Modules](#modules)
-
+2. [Getting Started](#getting-started)
+   * [Prerequisites](#prerequisites)
+3. [Running the Code](#running-the-code)
+4. [Directory](#directory)
+   * [Included Files](included-files)
+   * [License](#license)
 ## Overview
 ### Description
 Infodemic.cc as an extension is a Chrome Extension that allows the user to output all the text in a certain webpage and then copy it to their clipboard. Eventually it will be able to scan through the page and determine the likelihood that the page is the product of coordinated inauthentic behavior.
@@ -48,3 +53,15 @@ Follow these steps to set up and run the infodemic.cc program:
     3. The extension should now appear in your list of extensions
 
 4. Using the extension
+    1. Navigate to any Webpage
+    2. Click `Output Page Text`
+    3. Copy the Output text
+
+
+
+## Directory
+
+### Included Files
+
+### License
+[MIT](https://choosealicense.com/licenses/mit/)
