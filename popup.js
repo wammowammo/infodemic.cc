@@ -1,4 +1,4 @@
-document.getElementById('copyButton').addEventListener('click', async () => {
+document.getElementById('outputButton').addEventListener('click', async () => {
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
     chrome.scripting.executeScript({
@@ -7,6 +7,15 @@ document.getElementById('copyButton').addEventListener('click', async () => {
     }, (results) => {
         document.getElementById('textArea').value = results[0].result;
     });
+});
+
+document.getElementById('copyButton').addEventListener('click', async () => {
+    let text = document.getElementById('textArea').value;
+    await navigator.clipboard.writeText(text);
+    document.getElementById('message').innerText = 'Text copied to clipboard!';
+    setTimeout(() => {
+        document.getElementById('message').innerText = '';
+    }, 2000);
 });
 
 function getPageText() {
